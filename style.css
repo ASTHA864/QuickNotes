@@ -1,0 +1,140 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e0f7fa 0%, #abe4b0 100%);
+  margin: 0;
+  padding: 20px;
+  transition: background 0.3s ease;
+}
+
+.container {
+  max-width: 650px;
+  margin: auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  text-align: center;
+  color: #1e88e5;
+  margin: 0;
+}
+
+header p {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 12px;
+  font-size: 16px;
+  resize: none;
+  border: none;
+  border-radius: 12px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.08);
+  margin: 20px 0;
+}
+
+button {
+  background: #1e88e5;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #1565c0;
+  transform: scale(1.03);
+}
+
+.note {
+  background: #f9f9f9;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.note p {
+  margin: 0 0 10px 0;
+}
+
+.delete-btn {
+  margin-right: 8px;
+  background: #e53935;
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+
+.edit-area {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: none;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  color: #eee;
+}
+
+.container.dark-mode {
+  background: #1f1f1f;
+}
+
+textarea.dark-mode,
+.note.dark-mode,
+.edit-area.dark-mode {
+  background: #333;
+  color: #eee;
+}
+
+.delete-btn.dark-mode {
+  background: #b71c1c;
+}
+
+.theme-toggle-group {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  z-index: 100;
+}
+
+.toggle-btn {
+  background: #1e88e5;
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 10px 22px;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+body.dark-mode .toggle-btn {
+  background: #ffb300;
+  color: #222;
+}
+
+/* Remove sun logo, use text only for theme toggle button */
